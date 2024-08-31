@@ -1,0 +1,16 @@
+{
+  "name": "broadcast-server",
+  "version": "1.0.0",
+  "description": "Simple broadcast server that will allow clients to connect to it, send messages that will be broadcasted to all connected clients.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "type": "module",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ws": "^8.18.0"
+  }
+}
