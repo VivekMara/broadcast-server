@@ -3,7 +3,8 @@ import WebSocket from 'ws';
 const socket = new WebSocket('ws://localhost:8080');
 
 socket.onopen = () => {
-  console.log('connected')
+  console.log('connected');
+  socket.send("jalgaara!");
 }
 
 socket.onerror = (err) => {
@@ -14,4 +15,4 @@ socket.onmessage = (message) => {
   console.log(message.data)
 }
 
-socket.emit("hello server")
+
